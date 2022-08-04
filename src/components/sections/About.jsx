@@ -36,24 +36,24 @@ export const About = () => {
         </div>
           {/* KOTLIN REACT PYTON AND UNITY */}
 
-        <div className="absolute top-0 animate-bounce shadow-lg -left-5 border border-opacity-10 w-[150px] h-[150px] border-[#929C9F] p-7 bg-white backdrop-blur-md bg-opacity-5 rounded-full">
+        <div className="absolute delay-500 top-0 animate-bounce shadow-lg -left-5 border border-opacity-10 w-[150px] h-[150px] border-[#929C9F] p-7 bg-white backdrop-blur-md bg-opacity-5 rounded-full">
           <img src={kotlinImg} className="w-full h-full object-cover" alt="kotlin" />
         </div>
 
         <div className="absolute animate-bounce shadow-lg top-24 -left-[225px] border border-opacity-10 w-[130px] h-[130px] border-[#929C9F] p-7 bg-white backdrop-blur-md bg-opacity-5 rounded-full">
           <img src={ReactImg} className="w-full h-full object-cover" alt="kotlin" />
         </div>
-        <div className="absolute animate-bounce shadow-lg top-[300px] -left-[100px] border border-opacity-10 w-[100px] h-[100px] border-[#929C9F] p-7 bg-white backdrop-blur-md bg-opacity-5 rounded-full">
+        <div className="absolute delay-1000 animate-bounce shadow-lg top-[300px] -left-[100px] border border-opacity-10 w-[100px] h-[100px] border-[#929C9F] p-7 bg-white backdrop-blur-md bg-opacity-5 rounded-full">
           <img src={unityImg} className="w-full h-full object-cover" alt="kotlin" />
         </div>
 
 
 
-        <div className="absolute top-0 animate-ping shadow-lg -left-[400px] border border-opacity-10 w-[150px] h-[150px] border-[#929C9F] p-7 bg-white backdrop-blur-md bg-opacity-5 rounded-full">
+        <div className="absolute delay-500 top-0 animate-ping shadow-lg -left-[400px] border border-opacity-10 w-[150px] h-[150px] border-[#929C9F] p-7 bg-white backdrop-blur-md bg-opacity-5 rounded-full">
           <img src={pythonImg} className="w-full h-full object-cover" alt="kotlin" />
         </div>
 
-        <div className="absolute animate-ping shadow-lg top-[150px] -left-[425px] border border-opacity-10 w-[130px] h-[130px] border-[#929C9F] p-7 bg-white backdrop-blur-md bg-opacity-5 rounded-full">
+        <div className="absolute delay-1000 animate-ping shadow-lg top-[150px] -left-[425px] border border-opacity-10 w-[130px] h-[130px] border-[#929C9F] p-7 bg-white backdrop-blur-md bg-opacity-5 rounded-full">
           <img src={pop} className="w-full rounded-full h-full object-cover" alt="kotlin" />
         </div>
         <div className="absolute animate-ping shadow-lg top-[300px] -left-[300px] border border-opacity-10 w-[100px] h-[100px] border-[#929C9F] p-7 bg-white backdrop-blur-md bg-opacity-5 rounded-full">
