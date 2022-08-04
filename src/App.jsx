@@ -6,7 +6,7 @@ import { NavBar } from './components/Navbar';
 function App() {
 
   let options = {
-    sectionClassName:     'section',
+    sectionClassName:     'stroke-[#05B7EF]',
     anchors:              ['about', 'projects', 'skills', 'contact'],
     scrollBar:            false,
     navigation:           true,
@@ -34,17 +34,20 @@ function App() {
 
       </Footer>
 
-    <SectionsContainer>
+    <SectionsContainer {...options}>
       <Section> 
-
+        <p>About</p>
       </Section>
 
       <Section>
-        
+        <p>Skills</p>
       </Section>
 
       <Section>
-      
+        <p>Projects</p>
+      </Section>
+      <Section>
+        <p>Contact</p>
       </Section>
     </SectionsContainer>
       
