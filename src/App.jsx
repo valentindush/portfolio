@@ -1,12 +1,13 @@
 
 import {SectionsContainer, Section, Header, Footer} from 'react-fullpage';
 import { Blurred } from './components/blured';
+import { Footer_A } from './components/Footer';
 import { NavBar } from './components/Navbar';
-
+import {About} from './components/sections/About';
 function App() {
 
   let options = {
-    sectionClassName:     'stroke-[#05B7EF]',
+    activeClass:     'stroke-[#05B7EF]',
     anchors:              ['about', 'projects', 'skills', 'contact'],
     scrollBar:            false,
     navigation:           true,
@@ -23,31 +24,27 @@ function App() {
 
       <Blurred className={"top-[30%] left-12"}/>
       <Blurred className={"top-[40%] right-8"}/>
-
-      
-
-
       <Header>
         <NavBar/>
       </Header>
       <Footer>
-
+        <Footer_A/>
       </Footer>
 
     <SectionsContainer {...options}>
       <Section> 
-        <p>About</p>
+        <About/>
       </Section>
 
       <Section>
-        <p>Skills</p>
+        
       </Section>
 
       <Section>
-        <p>Projects</p>
+        
       </Section>
       <Section>
-        <p>Contact</p>
+        
       </Section>
     </SectionsContainer>
       
