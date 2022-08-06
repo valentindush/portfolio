@@ -184,7 +184,7 @@ export const Skills = () => {
             <h2 className="text-lg text-white opacity-50 font-medium">UI/UX Design</h2>
             <div className="flex items-center pt-4 gap-3 flex-wrap">
               {skills.ux.map((item,index)=>{
-                return <img key={index} className='object-cover cursor-pointer w-16 h-16' src={item.img} title={item.name} alt="skill_icon"/>
+                return <img key={index} className='object-cover cursor-pointer w-14 h-14  ' src={item.img} title={item.name} alt="skill_icon"/>
               })}
             </div>
           </div>
@@ -192,16 +192,16 @@ export const Skills = () => {
             <h2 className="text-lg text-white opacity-50 font-medium">Mobile apps development</h2>
             <div className="flex items-center pt-4 gap-3 flex-wrap">
               {skills.mobile.map((item,index)=>{
-                return <img key={index} className='object-cover cursor-pointer w-16 h-16' src={item.img} title={item.name} alt="skill_icon"/>
+                return <img key={index} className='object-cover cursor-pointer w-14 h-14' src={item.img} title={item.name} alt="skill_icon"/>
               })}
             </div>
           </div>
           
           <div className="mt-2 p-3">
-            <h2 className="text-lg text-white opacity-50 font-medium">Website development</h2>
+            <h2 className="text-lg text-white opacity-50 font-medium">Game development</h2>
             <div className="flex items-center pt-4 gap-3 flex-wrap">
               {skills.game.map((item,index)=>{
-                return <img key={index} className='object-cover cursor-pointer ' src={item.img} title={item.name} alt="skill_icon"/>
+                return <img key={index} className='object-cover cursor-pointer h-10 w-10' src={item.img} title={item.name} alt="skill_icon"/>
               })}
             </div>
           </div>

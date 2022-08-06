@@ -4,6 +4,7 @@ import { Blurred } from './components/blured';
 import { Footer_A } from './components/Footer';
 import { NavBar } from './components/Navbar';
 import {About} from './components/sections/About';
+import { Projects } from './components/sections/Projects';
 import {Skills} from './components/sections/Skills'
 function App() {
 
@@ -42,7 +43,7 @@ function App() {
       </Section>
 
       <Section>
-        
+        <Projects/>
       </Section>
       <Section>
         
