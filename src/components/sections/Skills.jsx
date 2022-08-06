@@ -1,5 +1,25 @@
 import React from 'react'
 
+//Importing icons
+
+import ai from '../../assets/icons/ai.png'
+import html from '../../assets/icons/html.png'
+import css from '../../assets/icons/css.png'
+import blender from '../../assets/icons/blender.png'
+import unity from '../../assets/icons/unity.png'
+import ps from '../../assets/icons/ps.png'
+import figma from '../../assets/icons/figma.png'
+import kotlin from '../../assets/icons/kotlin.png'
+import next from '../../assets/icons/next.png'
+import flutter from '../../assets/icons/flutter.png'
+import react from '../../assets/icons/react.png'
+import node from '../../assets/icons/node.png'
+import php from '../../assets/icons/php.png'
+import xd from '../../assets/icons/xd.png'
+import tailwind from '../../assets/icons/tailwind.png'
+import sketch from '../../assets/icons/sketch.png'
+import c from '../../assets/icons/c.png'
+import laravel from '../../assets/icons/laravel.png'
 export const Skills = () => {
 
 
@@ -39,86 +59,86 @@ export const Skills = () => {
     web: [
       {
         name: "react",
-        img: ""
+        img: react
       },
       {
         name: "Node JS",
-        img: ""
+        img: node
       },
       {
         name: "NEXT JS",
-        img: ""
+        img: next
       },
       {
         name: "PHP",
-        img: ""
+        img: php
       },
       {
         name: "HTML",
-        img: "",
+        img: html,
       },
       {
         name: "CSS",
-        img: "",
+        img: css,
       },
       {
         name: "Tailwindcss",
-        img:""
+        img: tailwind
       },
       {
         name: "Laravel",
-        img: ""
+        img: laravel
       },
     ],
     ux: [
       {
         name: "Figma",
-        img: ""
+        img: figma
       },
       {
         name: "Photoshop",
-        img: ""
+        img: ps
       },
       {
         name: "Adobe XD",
-        img: ""
+        img: xd
       },
       {
         name: "Adobe Illustrator",
-        img: ""
+        img: ai
       },
       {
         name: "Sketch",
-        img: ""
+        img: sketch
       }
 
     ],
     mobile: [
       {
         name: "Kotlin",
-        img: "",
+        img: kotlin,
       },
       {
         name: "Flutter",
-        img: ""
+        img: flutter
       },
       {
         name: "React Native",
-        img: ""
+        img: react
       }
     ],
     game: [
       {
         name: "Unity",
-        img: ""
+        img: unity
       },
       {
         name: "C#",
-        img: ""
+        img: c
       },
       {
         name: "Blender",
-        img: ""
+        img: blender
       }
     ]
   }
@@ -154,15 +174,36 @@ export const Skills = () => {
         <div className="border w-[60%] border-opacity-10 border-[#929C9F] p-4 bg-white backdrop-blur-md bg-opacity-5 rounded-xl flex flex-col justify-between">
           <div className="mt-2 p-3">
             <h2 className="text-lg text-white opacity-50 font-medium">Website development</h2>
+            <div className="flex items-center pt-4 gap-3 flex-wrap">
+              {skills.web.map((item,index)=>{
+                return <img key={index} className='object-cover cursor-pointer w-16 h-16' src={item.img} title={item.name} alt="skill_icon"/>
+              })}
+            </div>
           </div>
           <div className="mt-2 p-3">
-            <h2 className="text-lg text-white opacity-50 font-medium">Website development</h2>
+            <h2 className="text-lg text-white opacity-50 font-medium">UI/UX Design</h2>
+            <div className="flex items-center pt-4 gap-3 flex-wrap">
+              {skills.ux.map((item,index)=>{
+                return <img key={index} className='object-cover cursor-pointer w-16 h-16' src={item.img} title={item.name} alt="skill_icon"/>
+              })}
+            </div>
           </div>
           <div className="mt-2 p-3">
-            <h2 className="text-lg text-white opacity-50 font-medium">Website development</h2>
+            <h2 className="text-lg text-white opacity-50 font-medium">Mobile apps development</h2>
+            <div className="flex items-center pt-4 gap-3 flex-wrap">
+              {skills.mobile.map((item,index)=>{
+                return <img key={index} className='object-cover cursor-pointer w-16 h-16' src={item.img} title={item.name} alt="skill_icon"/>
+              })}
+            </div>
           </div>
+          
           <div className="mt-2 p-3">
             <h2 className="text-lg text-white opacity-50 font-medium">Website development</h2>
+            <div className="flex items-center pt-4 gap-3 flex-wrap">
+              {skills.game.map((item,index)=>{
+                return <img key={index} className='object-cover cursor-pointer ' src={item.img} title={item.name} alt="skill_icon"/>
+              })}
+            </div>
           </div>
         </div>
       </div>
