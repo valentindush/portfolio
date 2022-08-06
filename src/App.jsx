@@ -4,11 +4,12 @@ import { Blurred } from './components/blured';
 import { Footer_A } from './components/Footer';
 import { NavBar } from './components/Navbar';
 import {About} from './components/sections/About';
+import {Skills} from './components/sections/Skills'
 function App() {
 
   let options = {
     activeClass:     'stroke-[#05B7EF]',
-    anchors:              ['about', 'projects', 'skills', 'contact'],
+    anchors:              ['about', 'skills', 'projects', 'contact'],
     scrollBar:            false,
     navigation:           true,
     verticalAlign:        false,
@@ -37,7 +38,7 @@ function App() {
       </Section>
 
       <Section>
-        
+        <Skills />
       </Section>
 
       <Section>

@@ -9,14 +9,14 @@ export const NavBar = () => {
             <path d="M12.75 31.1667V17H21.25V31.1667"  strokeWidth="2" strokeLinecap="round" strokeLinejoin="round"/>
           </svg>
         </a>
-        <a href="#projects" className='stroke-[#929C9F] hover:stroke-[#05B7EF] transition ease-out hover:scale-[0.9]'>
+        <a href="#skills" className='stroke-[#929C9F] hover:stroke-[#05B7EF] transition ease-out hover:scale-[0.9]'>
           <svg  width="34" height="34" viewBox="0 0 34 34" fill="none" xmlns="http://www.w3.org/2000/svg">
             <path d="M19.8334 2.83333H8.50002C7.74857 2.83333 7.0279 3.13184 6.49655 3.6632C5.9652 4.19455 5.66669 4.91522 5.66669 5.66667V28.3333C5.66669 29.0848 5.9652 29.8054 6.49655 30.3368C7.0279 30.8682 7.74857 31.1667 8.50002 31.1667H25.5C26.2515 31.1667 26.9721 30.8682 27.5035 30.3368C28.0348 29.8054 28.3334 29.0848 28.3334 28.3333V11.3333L19.8334 2.83333Z" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
             <path d="M19.8333 2.83333V11.3333H28.3333"  stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
             <path d="M12.75 21.25H21.25"  stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
           </svg>
         </a>
-        <a href="#skills" className='stroke-[#929C9F] hover:stroke-[#05B7EF] transition ease-out hover:scale-[0.9]'>
+        <a href="#projects" className='stroke-[#929C9F] hover:stroke-[#05B7EF] transition ease-out hover:scale-[0.9]'>
           <svg width="34" height="34" viewBox="0 0 34 34" fill="none" xmlns="http://www.w3.org/2000/svg">
             <path d="M28.3333 9.91667H5.66665C4.10184 9.91667 2.83331 11.1852 2.83331 12.75V26.9167C2.83331 28.4815 4.10184 29.75 5.66665 29.75H28.3333C29.8981 29.75 31.1666 28.4815 31.1666 26.9167V12.75C31.1666 11.1852 29.8981 9.91667 28.3333 9.91667Z"  stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
             <path d="M22.6666 29.75V7.08333C22.6666 6.33189 22.3681 5.61122 21.8368 5.07986C21.3054 4.54851 20.5848 4.25 19.8333 4.25H14.1666C13.4152 4.25 12.6945 4.54851 12.1632 5.07986C11.6318 5.61122 11.3333 6.33189 11.3333 7.08333V29.75"  stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
