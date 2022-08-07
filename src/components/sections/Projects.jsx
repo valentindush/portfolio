@@ -3,7 +3,7 @@ import React from 'react'
 export const Projects = () => {
 
 
-    const blur = [
+    const projects = [
         {
             name: "Taker",
             desc: "A task management app",
@@ -42,11 +42,18 @@ export const Projects = () => {
     ]
 
   return (
-    <div className='pl-[100px]'>
-        
-
-
-        <div className="border border-opacity-10 border-[#929C9F] p-4 bg-white backdrop-blur-md bg-opacity-5 rounded-xl"></div>
+    <div className='pl-[120px] pr-[90px]'>
+        <h2 className="text-xl  text-center text-[#929C9F]">Projects I’ve worked on so far👌😉! </h2>
+        <div className="flex justify-center gap-4 pt-6 flex-wrap">
+            {projects.map((project,index)=>{
+                return (
+                    <div key={index} className="border min-w-[250px] cursor-pointer h-[250px] border-opacity-10 border-[#929C9F] p-4 bg-white backdrop-blur-md bg-opacity-5 rounded-xl">
+                        
+                    </div>
+                )
+            })}
+        </div>
+        <p className='text-[#929C9F]'>For more projects check out my GITHUB </p>
     </div>
   )
 }
