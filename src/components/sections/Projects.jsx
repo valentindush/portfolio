@@ -3,6 +3,7 @@ import rest from '../../assets/projects/1k.png'
 import salenix from '../../assets/projects/salenix.png'
 import dush from '../../assets/projects/dush.png'
 import tasker from '../../assets/projects/tasker.png'
+import tesla from '../../assets/projects/tesla.png'
 
 export const Projects = () => {
 
@@ -25,14 +26,14 @@ export const Projects = () => {
         {
             name: "Viigram",
             desc: "A simple instagram clone app",
-            img: "",
+            img: tesla,
             url: "https://viigram.vercel.app/",
             sourceCode: "https://github.com/valentindush/viiiGram"
         },
         {
             name: "Dush Forms",
             desc: "A web form builder similar to popular google forms",
-            img: "",
+            img: tesla,
             url: "https://dush-forms.vercel.app/",
             sourceCode:"https://github.com/valentindush/dush-forms"
 
@@ -47,7 +48,7 @@ export const Projects = () => {
         {
             name: "Tesla App",
             desc: "A neuromorphic UX design of a Tesla App",
-            img: "",
+            img: tesla,
             url: "https://tesla-app.vercel.app/",
             sourceCode: "#"
         },
@@ -62,7 +63,7 @@ export const Projects = () => {
 
   return (
     <div className='pl-[120px] pr-[90px]'>
-        <h2 className="text-xl  text-center text-[#929C9F]">Projects I’ve worked on so far👌😉! </h2>
+        <h2 className="text-xl  text-center text-[#929C9F]">Some of the projects I’ve worked on so far👌😉! </h2>
         <div className="flex justify-center gap-4 pt-6 flex-wrap">
             {projects.map((project,index)=>{
                 return (

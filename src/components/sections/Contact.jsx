@@ -1,11 +1,15 @@
 import React from 'react'
+import { MapContainer, TileLayer, useMap,Marker,Popup } from 'react-leaflet'
 
 export const Contact = () => {
+
+    const position = [-1.9134189568469118, 30.044717809847754]
+
   return (
     <div className='px-[100px]'>
         <header><h1 className='text-[#929C9F] text-lg text-center'>Contact me</h1></header>
 
-        <div className="flex flex-wrap gap4 justify-center">
+        <div className="flex contact flex-wrap gap-12 justify-center">
             <div className="flex flex-col gap-4 pt-24 px-6">
                 <div className="flex gap-3 items-center">
                     <svg width="28" height="28" viewBox="0 0 28 28" fill="none" xmlns="http://www.w3.org/2000/svg">
@@ -31,9 +35,22 @@ export const Contact = () => {
             <div className="pt-24 w-[500px]">
                 <form className='contacForm' action="#">
                     <input placeholder='Email: e.g josh@doe.com' className="border block w-full border-opacity-10 border-[#929C9F]  p-4 bg-white backdrop-blur-md bg-opacity-5 rounded-xl outline-none focus:border-cyan-500 focus:border-opacity-30 text-[#929C9F] text-md"/>
-                    <textarea placeholder='Write Message' className="border w-full block resize-y mt-2 border-opacity-10 border-[#929C9F]  p-4 bg-white backdrop-blur-md bg-opacity-5 rounded-xl outline-none focus:border-cyan-500 focus:border-opacity-30 text-[#929C9F] text-md"/>
+                    <textarea placeholder='Write Message' className="border h-[250px] w-full block resize-y mt-2 border-opacity-10 border-[#929C9F]  p-4 bg-white backdrop-blur-md bg-opacity-5 rounded-xl outline-none focus:border-cyan-500 focus:border-opacity-30 text-[#929C9F] text-md"/>
                     <button type='submit' className="bg-cyan-500 p-2 font-medium text-gray-800 w-full rounded-lg shadow-2xl mt-2">Send Message</button>
                 </form>
+            </div>
+            <div className="">
+                {/* <MapContainer style={{width:"300px", height:"300px"}} center={position} zoom={13} scrollWheelZoom={false}>
+                    <TileLayer
+                    attribution='&copy; <a href="https://www.openstreetmap.org/copyright">OpenStreetMap</a> contributors'
+                    url="https://{s}.tile.openstreetmap.org/{z}/{x}/{y}.png"
+                    />
+                    <Marker position={position}>
+                    <Popup>
+                        A pretty CSS3 popup. <br /> Easily customizable.
+                    </Popup>
+                    </Marker>
+                </MapContainer> */}
             </div>
         </div>
     </div>

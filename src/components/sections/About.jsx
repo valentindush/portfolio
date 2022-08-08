@@ -31,7 +31,7 @@ export const About = () => {
         </div>
       </div>
       <div className="absolute right-0 top-24 -z-10">
-        <div className="img max-w-lg  pr-12">
+        <div className="imgp max-w-lg  pr-12">
           <img src={img} alt="eleeh"/>
         </div>
           {/* KOTLIN REACT PYTON AND UNITY */}

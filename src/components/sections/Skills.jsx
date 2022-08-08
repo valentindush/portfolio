@@ -149,19 +149,19 @@ export const Skills = () => {
       <header>
         <h2 className="text-xl  text-center text-[#929C9F]">My coding jurney until now </h2>
       </header>
-      <div className="flex gap-2 pt-6">
-        <div className="border w-[40%] border-opacity-10 border-[#929C9F] p-4 bg-white backdrop-blur-md bg-opacity-5 rounded-xl">
+      <div className="flex gap-2 pt-6 skills">
+        <div className="fullw border w-[40%] border-opacity-10 border-[#929C9F] p-4 bg-white backdrop-blur-md bg-opacity-5 rounded-xl">
           {journey.map((item,index)=>{
 
             return (
-              <div className="text-[#929C9F] relative">
+              <div key={index} className="text-[#929C9F] relative">
                 <p className='text-xl font-semibold'>{item.year}</p>
                 <div className=" p-2">
                   <div className="absolute w-3 h-3 rounded-full bg-[#929C9F] bottom-0 left-[4px]"></div>
                   <div className=" p-3 border-l-4 border-[#929C9F]">
                     {item.items.map((item,index)=>{
                       return (
-                        <p className='text-white opacity-60'>{item}</p>
+                        <p key={index} className='text-white opacity-60'>{item}</p>
                       )})
             
                     }
@@ -171,7 +171,7 @@ export const Skills = () => {
             )
           })}
         </div>
-        <div className="border w-[60%] border-opacity-10 border-[#929C9F] p-4 bg-white backdrop-blur-md bg-opacity-5 rounded-xl flex flex-col justify-between">
+        <div className="fullw border w-[60%] border-opacity-10 border-[#929C9F] p-4 bg-white backdrop-blur-md bg-opacity-5 rounded-xl flex flex-col justify-between">
           <div className="mt-2 p-3">
             <h2 className="text-lg text-white opacity-50 font-medium">Website development</h2>
             <div className="flex items-center pt-4 gap-3 flex-wrap">

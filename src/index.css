@@ -9,3 +9,19 @@
 @tailwind base;
 @tailwind components;
 @tailwind utilities;
+
+@media only screen and (max-width: 1000px){
+  .fullw{
+    width: 100%;
+  }
+  .imgp{
+    width: 100px;
+    height: 100px;
+  }
+  .skills{
+    flex-wrap: wrap;
+    gap: 10px;
+  }
+}
+
+

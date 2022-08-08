@@ -10,7 +10,7 @@ import {Skills} from './components/sections/Skills'
 function App() {
 
   let options = {
-    activeClass:     'stroke-[#05B7EF]',
+    activeClass:     'navActive',
     anchors:              ['about', 'skills', 'projects', 'contact'],
     scrollBar:            false,
     navigation:           true,
