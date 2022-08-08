@@ -4,7 +4,8 @@ import salenix from '../../assets/projects/salenix.png'
 import dush from '../../assets/projects/dush.png'
 import tasker from '../../assets/projects/tasker.png'
 import tesla from '../../assets/projects/tesla.png'
-
+import forms from '../../assets/projects/forms.png'
+import viigram from '../../assets/projects/viigram.png'
 export const Projects = () => {
 
 
@@ -26,14 +27,14 @@ export const Projects = () => {
         {
             name: "Viigram",
             desc: "A simple instagram clone app",
-            img: tesla,
+            img: viigram,
             url: "https://viigram.vercel.app/",
             sourceCode: "https://github.com/valentindush/viiiGram"
         },
         {
             name: "Dush Forms",
             desc: "A web form builder similar to popular google forms",
-            img: tesla,
+            img: forms,
             url: "https://dush-forms.vercel.app/",
             sourceCode:"https://github.com/valentindush/dush-forms"
 
@@ -62,7 +63,7 @@ export const Projects = () => {
     ]
 
   return (
-    <div className='pl-[120px] pr-[90px]'>
+    <div className='pl-[120px] pr-[90px] relative'>
         <h2 className="text-xl  text-center text-[#929C9F]">Some of the projects I’ve worked on so far👌😉! </h2>
         <div className="flex justify-center gap-4 pt-6 flex-wrap">
             {projects.map((project,index)=>{
@@ -89,6 +90,8 @@ export const Projects = () => {
             })}
         </div>
         <p className='text-[#929C9F]'>For more projects check out my GITHUB </p>
+
+        <div className="bg-cyan-600 w-24 h-24 blur-3xl absolute top-1/2 left-[50%]"></div>
     </div>
   )
 }

@@ -1,9 +1,34 @@
-import React from 'react'
+import React, { useState } from 'react'
 import { MapContainer, TileLayer, useMap,Marker,Popup } from 'react-leaflet'
-
+import emailjs from 'emailjs-com'
 export const Contact = () => {
 
     const position = [-1.9134189568469118, 30.044717809847754]
+
+    const [email, setEmail] = useState("")
+    const [message,setMessage] = useState("")
+    const [name,setName] = useState("")
+
+    const sendMail = (e) => {
+        e.preventDefault()
+        console.log("ssssssss")
+        emailjs.send(
+            "service_mjdt91g",
+            "template_m2h9jgg",
+            {
+                from_name: name,
+                email: email,
+                message: message,
+            },
+            "mzp79RR93zKnhxXEh"
+        ).then((response) => {
+            if(response) alert("Message sent successfully")
+        }).catch((err)=>{
+            alert("Error sending message")
+        })
+        
+        
+    }
 
   return (
     <div className='px-[100px]'>
@@ -33,9 +58,10 @@ export const Contact = () => {
                 </div>
             </div>
             <div className="pt-24 w-[500px]">
-                <form className='contacForm' action="#">
-                    <input placeholder='Email: e.g josh@doe.com' className="border block w-full border-opacity-10 border-[#929C9F]  p-4 bg-white backdrop-blur-md bg-opacity-5 rounded-xl outline-none focus:border-cyan-500 focus:border-opacity-30 text-[#929C9F] text-md"/>
-                    <textarea placeholder='Write Message' className="border h-[250px] w-full block resize-y mt-2 border-opacity-10 border-[#929C9F]  p-4 bg-white backdrop-blur-md bg-opacity-5 rounded-xl outline-none focus:border-cyan-500 focus:border-opacity-30 text-[#929C9F] text-md"/>
+                <form onSubmit={sendMail} className='contacForm' action="#">
+                    <input value={name} onChange={(e)=>setName(e.target.value)} placeholder='Name: e.g josh doe' className="border block w-full border-opacity-10 border-[#929C9F]  p-3 bg-white backdrop-blur-md bg-opacity-5 rounded-xl outline-none focus:border-cyan-500 focus:border-opacity-30 text-[#929C9F] text-md"/>
+                    <input value={email} onChange={(e)=>setEmail(e.target.value)} placeholder='Email: e.g josh@doe.com' className="border mt-2  block w-full border-opacity-10 border-[#929C9F]  p-3 bg-white backdrop-blur-md bg-opacity-5 rounded-xl outline-none focus:border-cyan-500 focus:border-opacity-30 text-[#929C9F] text-md"/>
+                    <textarea value={message} onChange={(e)=>setMessage(e.target.value)} placeholder='Write Message' className="border h-[230px] w-full block resize-y mt-2 border-opacity-10 border-[#929C9F]  p-4 bg-white backdrop-blur-md bg-opacity-5 rounded-xl outline-none focus:border-cyan-500 focus:border-opacity-30 text-[#929C9F] text-md"/>
                     <button type='submit' className="bg-cyan-500 p-2 font-medium text-gray-800 w-full rounded-lg shadow-2xl mt-2">Send Message</button>
                 </form>
             </div>
