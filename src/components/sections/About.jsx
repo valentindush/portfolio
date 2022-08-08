@@ -6,11 +6,16 @@ import unityImg from '../../assets/unity.png'
 import pythonImg from '../../assets/R.png'
 import kaliLogo from '../../assets/kali.png'
 import pop from '../../assets/pop.jpg'
+import logo from '../../assets/logo.svg'
 
 export const About = () => {
   return (
     <div className='pl-[100px]'>
       <div className="z-10">
+        <img className='absolute top-6 blur-xl' src={logo} alt="" />
+        <img className='absolute top-6 blur-xl' src={logo} alt="" />
+        <img className='absolute top-6 blur-2xl' src={logo} alt="" />
+        <img className='absolute top-6' src={logo} alt="" />
         <div className="border mt-20 border-opacity-10 border-[#929C9F] p-4 bg-white backdrop-blur-md bg-opacity-5 rounded-xl max-w-md">
           <p className='text-[#929C9F]'>
             Hello friends, I'm
