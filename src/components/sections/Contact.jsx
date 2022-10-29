@@ -24,6 +24,7 @@ export const Contact = () => {
         ).then((response) => {
             if(response) alert("Message sent successfully")
         }).catch((err)=>{
+            console.log(err)
             alert("Error sending message")
         })
         
