@@ -7,6 +7,7 @@ import {About} from './components/sections/About';
 import { Contact } from './components/sections/Contact';
 import { Projects } from './components/sections/Projects';
 import {Skills} from './components/sections/Skills'
+import Menu from './components/menu';
 function App() {
 
   let options = {
@@ -23,34 +24,9 @@ function App() {
 
 
   return (
-    <div className="App bg-[#092027] h-screen w-screen">
-
-      <Blurred className={"top-[30%] left-12"}/>
-      <Blurred className={"top-[40%] right-8"}/>
-      <Header>
-        <NavBar/>
-      </Header>
-      <Footer>
-        <Footer_A/>
-      </Footer>
-
-    <SectionsContainer {...options}>
-      <Section> 
-        <About/>
-      </Section>
-
-      <Section>
-        <Skills />
-      </Section>
-
-      <Section>
-        <Projects/>
-      </Section>
-      <Section>
-        <Contact />
-      </Section>
-    </SectionsContainer>
-      
+    <div className="App bg-white h-screen w-screen overflow-x-hidden relative px-24 md:px-6">
+      <Menu />
+      <About />  
     </div>
   )
 }

@@ -60,12 +60,12 @@ export const Footer_A = () => {
   ]
 
   return (
-    <div className='pl-[100px] pb-5'>
+    <div className='pb-5'>
         <footer className='flex items-center gap-3'>
             {Socials.map(({name, url, icon})=>{
 
               return(
-                <a href={url} title={name} className="border flex items-center justify-center  border-opacity-10 border-[#929C9F] w-10 h-10 p-2 bg-white backdrop-blur-md bg-opacity-5 rounded-full">
+                <a href={url} title={name} className="border flex items-center justify-center rounded-full">
                   {icon}
                 </a>
               )

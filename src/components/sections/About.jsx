@@ -8,65 +8,45 @@ import kaliLogo from '../../assets/kali.png'
 import pop from '../../assets/pop.jpg'
 import logo from '../../assets/logo.svg'
 
+
+
+const details = {
+  name: "Valentin Dushime",
+  nickname: "Dush",
+  title: "Software Engineer & Starter Machine Learning Engineer",
+  dob: new Date("2006-05-23"),
+  nationality: "Rwandan"
+}
+
 export const About = () => {
   return (
-    <div className='pl-[100px]'>
-      <div className="z-10">
-        <img className='absolute top-6 blur-xl' src={logo} alt="" />
-        <img className='absolute top-6 blur-xl' src={logo} alt="" />
-        <img className='absolute top-6 blur-2xl' src={logo} alt="" />
-        <img className='absolute top-6' src={logo} alt="" />
-        <div className="border mt-20 border-opacity-10 border-[#929C9F] p-4 bg-white backdrop-blur-md bg-opacity-5 rounded-xl max-w-md">
-          <p className='text-[#929C9F]'>
-            Hello friends, I'm
-            <p className='text-xl font-bold'>Valentin Dushime</p>
-            <p className='mt-3'>
-              I’m a software developer, web developer , ux designer and game dev rookie.
-            </p>
-            <p className='mt-4 '>
-              I make websites and mobile apps.  <br />
-              I Iike to learn new things and I’m looking forward to work with others.
-            </p>
-          </p>
-        </div>
-        <div className="border mt-5 border-opacity-10 border-[#929C9F] p-4 bg-white backdrop-blur-md bg-opacity-5 rounded-xl max-w-md">
-          <p className='text-[#929C9F]'>
-            “I don’t sleep. I got an opportunity to make a dream become a reality. People often say I have so much energy, that I never stop; but that’s what it takes to accomplish your goals. If it ain’t making me money, making me better or making me happy… ain’t making time for it.” – 50 Cent
-          </p>
-        </div>
+    <div className='border p-4 rounded-xl mt-6'>
+      <header>
+        <h2 className='font-semibold text-xl'>About myself</h2>
+      </header>
+      <div className="mt-2 flex gap-3 md:flex-col ">
+        <img className='rounded-xl w-[20rem] h-[10rem] object-cover md:w-full md:h-[20rem]' src="/img/me.jpg" alt="" />
+        <p className='text-gray-800 font-light'>
+        I am a full stack web developer with over 4 years of experience, adept in designing and maintaining
+        web applications. Proficient in front-end (HTML, CSS, JS, frameworks) and back-end (Java, Python,
+        Node.js, databases) web development, I can create visually appealing, responsive, and secure web
+        apps with seamless user experience. Skilled in software development best practices and cloud
+        infrastructure, I can debug, optimize and deploy web apps. I am passionate about creating high
+        quality, user-friendly web applications that exceed customer expectations.
+        </p>
       </div>
-      <div className="absolute right-0 top-24 -z-10">
-        <div className="imgp max-w-lg  pr-12">
-          <img src={img} alt="eleeh"/>
+
+      <header className='mt-6'>
+        <h2 className='font-semibold text-lg'>Details</h2>
+
+        <div className="flex flex-col gap-1">
+          <div className="text-sm font-medium">Name: {details.name}</div>
+          <div className="text-sm font-medium">Nickname: {details.nickname}</div>
+          <div className="text-sm font-medium">title: {details.title}</div>
+          <div className="text-sm font-medium">DOB: {details.dob.toLocaleDateString('en-US')}</div>
+          <div className="text-sm font-medium">Nationality: {details.nationality}</div>
         </div>
-          {/* KOTLIN REACT PYTON AND UNITY */}
-
-        <div className="absolute delay-500 top-0 animate-bounce shadow-lg -left-5 border border-opacity-10 w-[150px] h-[150px] border-[#929C9F] p-7 bg-white backdrop-blur-md bg-opacity-5 rounded-full">
-          <img src={kotlinImg} className="w-full h-full object-cover" alt="kotlin" />
-        </div>
-
-        <div className="absolute animate-bounce shadow-lg top-24 -left-[225px] border border-opacity-10 w-[130px] h-[130px] border-[#929C9F] p-7 bg-white backdrop-blur-md bg-opacity-5 rounded-full">
-          <img src={ReactImg} className="w-full h-full object-cover" alt="kotlin" />
-        </div>
-        <div className="absolute delay-1000 animate-bounce shadow-lg top-[300px] -left-[100px] border border-opacity-10 w-[100px] h-[100px] border-[#929C9F] p-7 bg-white backdrop-blur-md bg-opacity-5 rounded-full">
-          <img src={unityImg} className="w-full h-full object-cover" alt="kotlin" />
-        </div>
-
-
-
-        <div className="absolute delay-500 top-0 animate-ping shadow-lg -left-[400px] border border-opacity-10 w-[150px] h-[150px] border-[#929C9F] p-7 bg-white backdrop-blur-md bg-opacity-5 rounded-full">
-          <img src={pythonImg} className="w-full h-full object-cover" alt="kotlin" />
-        </div>
-
-        <div className="absolute delay-1000 animate-ping shadow-lg top-[150px] -left-[425px] border border-opacity-10 w-[130px] h-[130px] border-[#929C9F] p-7 bg-white backdrop-blur-md bg-opacity-5 rounded-full">
-          <img src={pop} className="w-full rounded-full h-full object-cover" alt="kotlin" />
-        </div>
-        <div className="absolute animate-ping shadow-lg top-[300px] -left-[300px] border border-opacity-10 w-[100px] h-[100px] border-[#929C9F] p-7 bg-white backdrop-blur-md bg-opacity-5 rounded-full">
-          <img src={kaliLogo} className="w-full h-full object-cover" alt="kotlin" />
-        </div>
-
-
-      </div>
+      </header>
     </div>
   )
 }
