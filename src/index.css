@@ -5,7 +5,18 @@
   padding: 0;
   box-sizing: border-box;
   font-family: 'Catamaran', sans-serif;
+
 }
+
+::-webkit-scrollbar {
+  width: 5px;
+}
+
+::-webkit-scrollbar-thumb {
+  background: #888;
+  border-radius: 10px;
+}
+
 @tailwind base;
 @tailwind components;
 @tailwind utilities;
