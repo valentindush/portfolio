@@ -3,7 +3,7 @@ import bgImage from './assets/R.jpeg'
 function App() {
 
   return (
-    <div className="overflow-y-hidden w-screen h-screen py-24">
+    <div className="overflow-y-hidden w-screen h-screen py-24 bg-slate-800">
        <img className='w-screen brightness-75 z-0 absolute top-0 left-0 h-screen object-cover blur-sm' src="/img/R.jpeg" alt="" />
         <div className="bg-white/20 max-w-2xl h-[calc(100vh-12rem)] p-2 relative z-20 mx-auto rounded-xl border-2 border-white/20 backdrop-blur-sm">
           <div className="w-full h-full overflow-y-scroll p-4">
