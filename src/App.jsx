@@ -3,9 +3,9 @@ import bgImage from './assets/R.jpeg'
 function App() {
 
   return (
-    <div className="overflow-y-hidden w-screen h-screen py-12 bg-slate-800">
+    <div className="overflow-y-hidden w-screen h-screen py-12 bg-slate-800 md:px-6">
       <img className='w-screen brightness-75 z-0 absolute top-0 left-0 h-screen object-cover blur-sm' src="/img/R.jpeg" alt="" />
-      <div className="bg-white/20 max-w-2xl h-[calc(100vh-6rem)] p-2 relative z-20 mx-auto rounded-xl border border-white/20 backdrop-blur-sm">
+      <div className="bg-white/10 max-w-2xl h-[calc(100vh-6rem)] p-2 relative z-20 mx-auto rounded-xl border border-white/20 backdrop-blur-md">
         <div className="w-full h-full overflow-y-scroll p-4">
           <div className="text-white">
             <div className="mt-2">
@@ -62,7 +62,7 @@ function App() {
                   I'm always excited to connect with fellow tech enthusiasts, potential collaborators,
                    or anyone who shares a passion for the limitless possibilities of programming,
                     machine learning, and AI. Feel free to reach out to me at{' '}
-                    <a href='mailto:codesvalentin@gmail.com'>codesvalentin@gmail.com</a> or connect with me on{' '}
+                    <a href='mailto:codesvalentin@gmail.com' className='text-blue-500'>codesvalentin@gmail.com</a> or connect with me on{' '}
                   <a href="https://www.linkedin.com/in/valentin-dushime-26509a1b9/" className="text-blue-500">Linkedin</a> to start a conversation.
                 </p>
                 <p className="text-lg mt-2">

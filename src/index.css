@@ -36,3 +36,15 @@
 }
 
 
+a:hover{
+  animation: lines 1s ease-in-out ;
+}
+
+@keyframes lines{
+  0%{
+    
+  }
+  100%{
+    width: 100%;
+  }
+}
